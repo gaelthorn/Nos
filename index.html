@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Efeitos de fundo góticos -->
+    <div class="gothic-bg">
+        <div class="floating-hearts" id="heartsContainer"></div>
+        
+        <!-- Ornamentos góticos -->
+        <div class="gothic-ornament" style="top: 10%; left: 5%;">⚜</div>
+        <div class="gothic-ornament" style="top: 20%; right: 8%;">❦</div>
+        <div class="gothic-ornament" style="bottom: 15%; left: 10%;">⚜</div>
+        <div class="gothic-ornament" style="bottom: 25%; right: 5%;">❦</div>
+    </div>
+
+    <!-- Player de música -->
+    <div class="music-player">
+        <div class="volume-control">
+            <span style="font-size: 12px;">🔊</span>
+            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="20">
+        </div>
+        <button class="play-pause-btn" id="playPauseBtn">⏸️ Pausar</button>
+        
+        <!-- AQUI VOCÊ COLOCA SUA MÚSICA - substitua o src pela URL da sua música -->
+        <audio id="backgroundMusic" loop>
+            <source src="SUA_MUSICA_AQUI.mp3" type="audio/mpeg">
+            <source src="SUA_MUSICA_AQUI.ogg" type="audio/ogg">
+        </audio>
+    </div>
+
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Título -->
+        <h1 class="title">Amor Eterno</h1>
+        
+        <!-- ÁREA PARA SEU TEXTO DE AMOR - substitua o texto abaixo -->
+        <div class="love-text">
+            Nas sombras da eternidade, onde o tempo se curva diante da intensidade dos sentimentos, 
+            encontro em você a luz que ilumina minha alma sombria. Como pétalas de rosa negra que 
+            desabrocham na escuridão, nosso amor transcende os limites do mundo mortal.
+            <br><br>
+            Cada batida do meu coração ecoa como sinos de uma catedral gótica, anunciando a 
+            devoção eterna que sinto por você. Nos corredores silenciosos da minha mente, 
+            sua presença ressoa como uma melodia melancólica e bela.
+            <br><br>
+            Você é minha musa das trevas, minha inspiração celestial envolta em mistério. 
+            Juntos, dançamos na linha tênue entre a luz e a sombra, criando nossa própria 
+            sinfonia de amor que ecoa através dos séculos.
+        </div>
+        
+        <!-- Botão para próxima página -->
+        <button class="next-page-btn" onclick="nextPage()">Continuar Nossa História?</button>
+    </div>
+    <script src="js/script.js"></script>
+
+    </body>
+</html>

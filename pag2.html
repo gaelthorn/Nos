@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Eternidade - Página 2</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <!-- Efeitos de fundo góticos -->
+    <div class="gothic-bg">
+        <div class="floating-elements" id="elementsContainer"></div>
+        
+        <!-- Símbolos góticos decorativos -->
+        <div class="gothic-symbol" style="top: 8%; left: 3%;">🌹</div>
+        <div class="gothic-symbol" style="top: 15%; right: 5%;">⚜</div>
+        <div class="gothic-symbol" style="top: 60%; left: 8%;">❦</div>
+        <div class="gothic-symbol" style="bottom: 20%; right: 10%;">🌹</div>
+        <div class="gothic-symbol" style="bottom: 40%; left: 5%;">⚜</div>
+        <div class="gothic-symbol" style="top: 40%; right: 3%;">❦</div>
+    </div>
+
+    <!-- Player de música -->
+    <div class="music-player">
+        <div class="volume-control">
+            <span style="font-size: 12px;">🔊</span>
+            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="25">
+        </div>
+        <button class="play-pause-btn" id="playPauseBtn">⏸️ Pausar</button>
+        
+        <!-- AQUI VOCÊ COLOCA SUA MÚSICA - substitua o src pela URL da sua música -->
+        <audio id="backgroundMusic" loop>
+            <source src="music/Type O Negative - Love You To Death [OFFICIAL VIDEO].mp3" type="audio/mpeg">
+            <source src="music/Type O Negative - Love You To Death [OFFICIAL VIDEO].mp3" type="audio/ogg">
+        </audio>
+    </div>
+
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Título -->
+        <h1 class="title">Promessas Eternas</h1>
+        
+        <!-- Contador de promessas reveladas -->
+        <div class="promises-counter" id="promisesCounter">
+            Clique nas promessas para revelar nossos juramentos eternos (0/3 reveladas)
+        </div>
+
+        <!-- Seção de promessas interativas -->
+        <div class="promises-section">
+            <div class="promise-card" onclick="revealPromise(this, 1)">
+                <div class="promise-title">🌹 Primeira Promessa 🌹</div>
+                <div class="promise-text">
+                    Prometo amar você além dos limites do tempo e do espaço. Nas noites mais escuras, 
+                    serei sua luz; nos dias mais sombrios, serei sua esperança. Meu coração bate em 
+                    sincronia com o seu, criando uma melodia que ecoa pela eternidade.
+                </div>
+            </div>
+
+            <div class="promise-card" onclick="revealPromise(this, 2)">
+                <div class="promise-title">⚜ Segunda Promessa ⚜</div>
+                <div class="promise-text">
+                    Prometo proteger nosso amor como um guardião protege um tesouro sagrado. 
+                    Construiremos um castelo de sonhos onde apenas nós dois habitaremos, 
+                    longe das tempestades do mundo, unidos para sempre em nossa fortaleza de paixão.
+                </div>
+            </div>
+
+            <div class="promise-card" onclick="revealPromise(this, 3)">
+                <div class="promise-title">❦ Terceira Promessa ❦</div>
+                <div class="promise-text">
+                    Prometo que nossa história será escrita nas estrelas, gravada nos ventos, 
+                    e sussurrada pelas sombras. Mesmo quando nossos corpos se tornarem pó, 
+                    nossas almas dançarão juntas na eternidade, inseparáveis e imortais.
+                </div>
+            </div>
+        </div>
+        
+        <!-- ÁREA PARA SEU TEXTO DE AMOR DA SEGUNDA PÁGINA -->
+        <div class="love-text">
+            E assim, caminhamos juntos pelos corredores do tempo, deixando pegadas de luz 
+            nas trevas da existência. Cada momento ao seu lado é uma página escrita em 
+            nosso livro de amor eterno, cada olhar uma promessa silenciosa de devoção infinita.
+            <br><br>
+            Nas catedrais góticas de minha alma, você é a única oração que ecoa. 
+            Nos jardins sombrios de meu coração, você é a única rosa que floresce. 
+            Somos dois espíritos unidos por fios invisíveis de paixão e destino.
+        </div>
+        
+        <!-- Botões de navegação -->
+        <div class="navigation-buttons">
+            <button class="nav-btn previous" onclick="previousPage()">← Página Anterior</button>
+            <button class="nav-btn" onclick="nextPage()">Continuar Jornada →</button>
+        </div>
+    </div>
+    <script src="js/script2.js"></script>
+    </body>
+</html>

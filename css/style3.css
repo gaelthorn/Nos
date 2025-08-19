@@ -1,0 +1,9 @@
+
+body {
+            font-family: 'Crimson Text', serif;
+            background: linear-gradient(135deg, #0f0a0f 0%, #2a1a2a 30%, #1a0f1a 70%, #0f0a0f 100%);
+            color: #e8d5d5;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }

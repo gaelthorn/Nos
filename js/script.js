@@ -6,7 +6,7 @@
 
         // Inicia a música automaticamente com volume baixo
         window.addEventListener('load', function() {
-            audio.volume = 0.02; // Volume inicial baixo (20%)
+            audio.volume = 0.01; // Volume inicial baixo (20%)
             
             // Tenta tocar automaticamente
             const playPromise = audio.play();
@@ -57,7 +57,7 @@
         // Função para próxima página
         function nextPage() {
             // AQUI VOCÊ PODE COLOCAR O LINK PARA SUA PRÓXIMA PÁGINA
-            alert('Aqui você pode adicionar o link para a próxima página da sua história de amor!');
+            window.location.href ='pag2.html';
             // Exemplo: window.location.href = 'proxima-pagina.html';
         }
 
